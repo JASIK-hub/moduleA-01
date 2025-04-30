@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08- Task</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+            height:100vh;
+            background-color: rgb(158, 198, 224);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            width:1200px;
+            height:900px;
+            gap:10px
+        }
+        .container div{
+            border:5px solid white;
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+        .container div:nth-of-type(1){
+            background-image: url(images/ani01.png);
+            grid-area: 1/1/span 2/span 2;
+        }
+        .container div:nth-of-type(2){
+            background-image: url(images/ani02.png);
+        }
+        .container div:nth-of-type(3){
+            background-image: url(images/ani03.png);
+        }
+        .container div:nth-of-type(4){
+            background-image: url(images/ani04.png);
+            grid-area: 2/3/span 2/span 2;
+        }
+        .container div:nth-of-type(5){
+            background-image: url(images/ani05.png);
+        }
+        .container div:nth-of-type(6){
+            background-image: url(images/ani06.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+    </div>
+</body>
+</html>
