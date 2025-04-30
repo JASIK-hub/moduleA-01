@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>06- Task</title>
+</head>
+
+<body>
+	<!-- Work here -->
+	 <div class="container">
+		<div class="box">10</div>
+		<div class="box">32</div>
+		<div class="box">64</div>
+		<div class="box">-15</div>
+	</div>
+		<h3>SUM:</h3>
+	 <script>
+		let sum=0
+		document.querySelectorAll('.box').forEach(box=>{
+			box.addEventListener('click',()=>{
+				let toggled=box.classList.toggle('clicked')
+				if(toggled){
+					sum+=Number(box.textContent)
+				}
+				else{
+					sum-=Number(box.textContent)
+				}
+				document.querySelector('h3').textContent=`SUM:${sum}`
+			})
+		})
+	 </script>
+</body>
+
+</html>

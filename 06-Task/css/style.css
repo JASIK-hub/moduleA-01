@@ -1,0 +1,25 @@
+/* Work here */
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    flex-direction: column;
+}
+.container{
+    width:1000px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px;
+    gap:10px;
+}
+.container div{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.container div.clicked{
+    background-color: yellow;
+}
